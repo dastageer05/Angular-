@@ -75,3 +75,10 @@ button:disabled {
 small {
   color: red;
 }
+
+a {
+  color: #004d40;
+  text-decoration: none;
+  margin-left: 150px;
+  margin-top: 15px;
+}

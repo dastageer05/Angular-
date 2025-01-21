@@ -77,6 +77,8 @@
     <button type="submit" [disabled]="registerForm.invalid">Register</button>
   </form>
 
+  <a routerLink="/login">Go to Login</a>
+
   <!-- Success or Error Message -->
   <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
   <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
