@@ -1,0 +1,16 @@
+<h3>Welcome to Todo Application</h3>
+<input [(ngModel)]="newTodo" type="text" placeholder="Enter your task" />
+<button *ngIf="editTodoStatus" (click)="updateTodo()">Update Todo</button>
+
+<button *ngIf="editTodoStatus" (click)="cancelEdit()">Cancel Edit</button>
+<button *ngIf="!editTodoStatus" (click)="addTodo()">Add Todo</button>
+<br />
+<ul *ngFor="let todo of myTodos">
+  <li>
+    <b>{{ todo.todo }}</b>
+    <button (click)="editTodo(todo.id)">Edit</button>
+    <button (click)="deleteTodo(todo.id)">Delete</button>
+  </li>
+</ul>
+
+<!-- <router-outlet /> -->

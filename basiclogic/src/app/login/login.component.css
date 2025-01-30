@@ -1,0 +1,10 @@
+.error {
+  color: red;
+}
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+}
+.welcome-message {
+  margin-top: 20px;
+}
